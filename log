@@ -1,0 +1,48 @@
+kernel/Makefile:133: *** No X.509 certificates found ***
+drivers/input/touchscreen/FT5336/ft5x06_720p.c:54:5: warning: "CTP_PROC_INTERFACE" is not defined [-Wundef]
+ #if CTP_PROC_INTERFACE
+     ^
+drivers/input/touchscreen/FT5336/ft5x06_720p.c:58:5: warning: "CTP_LOCKDOWN_INFO" is not defined [-Wundef]
+ #if CTP_LOCKDOWN_INFO
+     ^
+drivers/input/touchscreen/FT5336/ft5x06_720p.c:113:5: warning: "CTP_PROC_INTERFACE" is not defined [-Wundef]
+ #if CTP_PROC_INTERFACE
+     ^
+drivers/input/touchscreen/FT5336/ft5x06_720p.c:166:5: warning: "CTP_PROC_INTERFACE" is not defined [-Wundef]
+ #if CTP_PROC_INTERFACE
+     ^
+drivers/input/touchscreen/FT5336/ft5x06_720p.c:170:5: warning: "CTP_PROC_INTERFACE" is not defined [-Wundef]
+ #if CTP_PROC_INTERFACE
+     ^
+drivers/input/touchscreen/FT5336/ft5x06_720p.c: In function 'fb_notifier_callback':
+drivers/input/touchscreen/FT5336/ft5x06_720p.c:760:1: error: expected expression before '<<' token
+ <<<<<<< HEAD
+ ^
+drivers/input/touchscreen/FT5336/ft5x06_720p.c:764:9: error: invalid suffix "c5be5..." on integer constant
+ >>>>>>> 54c5be5... add dt2w
+         ^
+drivers/input/touchscreen/FT5336/ft5x06_720p.c: In function 'ft5x06_fw_upgrade_start':
+drivers/input/touchscreen/FT5336/ft5x06_720p.c:881:3: error: implicit declaration of function 'usleep' [-Werror=implicit-function-declaration]
+   usleep(FT_55_AA_DLY_NS);
+   ^
+drivers/input/touchscreen/FT5336/ft5x06_720p.c: In function 'fts_ctpm_read_lockdown':
+drivers/input/touchscreen/FT5336/ft5x06_720p.c:1113:3: error: 'lockdown_info' undeclared (first use in this function)
+   lockdown_info[k] = data->lockdown_info[k];
+   ^
+drivers/input/touchscreen/FT5336/ft5x06_720p.c:1113:3: note: each undeclared identifier is reported only once for each function it appears in
+drivers/input/touchscreen/FT5336/ft5x06_720p.c:1116:2: error: 'tp_color' undeclared (first use in this function)
+  tp_color = lockdown_info[2];
+  ^
+drivers/input/touchscreen/FT5336/ft5x06_720p.c: At top level:
+drivers/input/touchscreen/FT5336/ft5x06_720p.c:1129:40: fatal error: ft_app_ic_biel_ebbg_720p.txt: No such file or directory
+ #include "ft_app_ic_biel_ebbg_720p.txt"
+                                        ^
+cc1: some warnings being treated as errors
+compilation terminated.
+make[4]: *** [drivers/input/touchscreen/FT5336/ft5x06_720p.o] Error 1
+make[3]: *** [drivers/input/touchscreen/FT5336] Error 2
+make[2]: *** [drivers/input/touchscreen] Error 2
+make[1]: *** [drivers/input] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make: *** [drivers] Error 2
+make: *** Waiting for unfinished jobs....
